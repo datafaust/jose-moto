@@ -51,7 +51,7 @@ const Header = () => {
                     height={20}
                     className="w-auto h-auto"
                 />
-                <h2 className="font-slab font-bold text-xl">JoseMoto</h2>
+                <h2 className="font-slab font-bold text-xl">Jose's Motorycle Repair</h2>
             </div>
             {/* Menu Icons */}
             <div className="md:hidden">

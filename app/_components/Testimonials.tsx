@@ -16,53 +16,54 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
     {
         id: 1,
-        name: "John Doe",
-        role: "CEO, TechCorp",
+        name: "Carter D.",
+        role: "Harley Owner",
         comment:
-            "Working with this team has been an absolute pleasure. Their attention to detail and innovative solutions have truly transformed our business.",
+            "Brought my bike in after it sat for years. Jose got it running like new again. Honest guy, fair prices.",
         image: "https://picsum.photos/seed/p1/100",
     },
     {
         id: 2,
-        name: "Jane Smith",
-        role: "Marketing Director",
+        name: "Miguel S.",
+        role: "Daily Rider",
         comment:
-            "The level of professionalism and creativity they bring to the table is unmatched. Highly recommended for any business looking to grow.",
+            "My chain snapped on the way to work. He showed up same day and had me back on the road in no time.",
         image: "https://picsum.photos/seed/p2/100",
     },
     {
         id: 3,
-        name: "Mike Johnson",
-        role: "Product Manager",
+        name: "Mike J.",
+        role: "Weekend Cruiser",
         comment:
-            "Outstanding service and exceptional results. They've exceeded our expectations in every way possible.",
+            "Great work on my carb clean and tune. Bike (’02 Shadow 750) runs way smoother now. Highly recommend.",
         image: "https://picsum.photos/seed/p3/100",
     },
     {
         id: 4,
-        name: "Sarah Williams",
-        role: "Car Enthusiast",
+        name: "Cynthia W.",
+        role: "First-Time Owner",
         comment:
-            "I've never experienced such exceptional car service before. The convenience of having them come to my location is a game-changer.",
+            "I dropped my bike off not knowing what was wrong. Jose figured it out quick and explained everything clearly.",
         image: "https://picsum.photos/seed/p4/100",
     },
     {
         id: 5,
-        name: "David Chen",
-        role: "Fleet Manager",
+        name: "Oscar C.",
+        role: "Vintage Collector",
         comment:
-            "Managing a fleet of vehicles is no easy task, but their team makes it seamless. Their reliability and expertise are unmatched.",
+            "Had an old ‘82 Honda CB I was trying to bring back. He brought it to life—engine, wiring, everything.",
         image: "https://picsum.photos/seed/p5/100",
     },
     {
         id: 6,
-        name: "Emily Rodriguez",
-        role: "Business Owner",
+        name: "Julio R.",
+        role: "NYC Commuter",
         comment:
-            "From regular maintenance to emergency repairs, they've always delivered top-notch service. I couldn't be more satisfied with their work.",
+            "Super convenient mobile service. He came right to my place and replaced the battery. Fast and professional.",
         image: "https://picsum.photos/seed/p6/100",
     },
-];
+]
+
 
 export default function Testimonials() {
     return (

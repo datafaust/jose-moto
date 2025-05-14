@@ -13,9 +13,9 @@ const quickLinks = [
 ];
 
 const services = [
-    { href: "#", label: "Auto repair" },
-    { href: "#", label: "Maintenance" },
-    { href: "#", label: "Diagnostics" },
+    { href: "#", label: "Brake Changes" },
+    { href: "#", label: "Engine Service" },
+    { href: "#", label: "Carburetor Clean/Tune" },
     { href: "#", label: "Tire services" }
 ];
 
@@ -65,16 +65,15 @@ const Footer = () => {
                         <div className="space-y-2">
                             <p className="flex items-start gap-2">
                                 <FaMapMarkerAlt className="mt-1" />
-                                5, Saliu street, Adeniyi jones, Ikeja, Lagos
-                                state, Nigeria
+                                Corona, NY 11368, USA
                             </p>
                             <p className="flex items-center gap-2">
                                 <FaEnvelope />
-                                help@servex.com
+                                Josesmotorcyclerepair@gmail.com
                             </p>
                             <p className="flex items-center gap-2">
                                 <FaPhone />
-                                +234 900 5678 956
+                                347 454 2337
                             </p>
                         </div>
                     </div>

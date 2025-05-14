@@ -94,14 +94,36 @@ export default function ContactForm() {
                 {/* Map Section */}
                 <div className="w-full h-[400px] lg:h-full rounded-lg overflow-hidden">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30596073366!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1647286135005!5m2!1sen!2s"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12090.889333617066!2d-73.85972025000004!3d40.74613495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25fcc36269401%3A0x54dd6abe7a67b150!2sCorona%2C%20Queens%2C%20NY!5e0!3m2!1sen!2sus!4v1747250886441!5m2!1sen!2sus"
                         className="w-full h-full border-0"
                         allowFullScreen
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
                     />
                 </div>
-
+                {/* Contact Details Section */}
+                <div className="w-full">
+                <div className="mb-5">
+                    <h2 className="text-accent mb-2 font-semibold">
+                        CONTACT US
+                    </h2>
+                    <h3 className="text-3xl font-slab font-bold">
+                        Get in touch
+                    </h3>
+                    <p className="text-gray-600 mt-2 text-lg">
+                        Give us a call/text to set up a free consultation or to ask any questions you may have. We’re here to help!
+                    </p>
+                    <p className="text-gray-600 mt-2 text-lg">
+                        <span className="font-semibold">Phone: </span>
+                        <a
+                            href="tel:3474542337"
+                            className="text-accent hover:text-accent/80 hover:underline cursor-pointer transition duration-200 text-xl"
+                        >
+                            (347) 454-2337
+                        </a>
+                    </p>
+                </div>
+            </div>
                 {/* Form Section */}
                 <div className="w-full">
                     <div className="mb-8">

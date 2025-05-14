@@ -10,30 +10,30 @@ const processSteps = [
         id: 1,
         title: "Schedule Your Service",
         description:
-            "Book your car maintenance with just a few taps. Choose your preferred service type and time slot - it's that straightforward.",
+            "Schedule a consultation online below or call/text us. Choose a time that fits your schedule.",
         icon: <BsCalendar4 className="w-6 h-6" />,
     },
     {
         id: 2,
-        title: "At Your Doorstep",
+        title: "At Your Doorstep or Ours",
         description:
-            "Stay where you are! Our expert mechanics come to your location, fully equipped with professional tools and expertise.",
+            "Drop your bike off at our garage or let us come to you—our flexible service model gives you the convenience you need, wherever you are.",
         icon: <HiHome className="w-6 h-6" />,
     },
     {
         id: 3,
-        title: "Expert Care",
+        title: "We Diagnose & Deliver",
         description:
-            "From routine maintenance to complex repairs, our certified technicians deliver top-notch service using premium equipment and parts.",
+            "Not sure what's wrong? We’ll diagnose the issue or listen to what you need—and get it fixed the right way, fast.",
         icon: <FaWrench className="w-6 h-6" />,
-    },
+    },    
     {
         id: 4,
-        title: "Ready to Roll",
+        title: "Ride Ready",
         description:
-            "Get back to your journey with confidence. Your vehicle is serviced, checked, and ready for the road ahead.",
-        icon: <IoCarSportOutline className="w-6 h-6" />,
-    },
+            "Hit the road with confidence. Your bike is fully serviced, tested, and ready to roll—wherever the ride takes you.",
+        icon: <IoCarSportOutline className="w-6 h-6" />, // consider replacing with a motorcycle icon like FaMotorcycle
+    },    
 ];
 
 const Process = () => {
@@ -65,10 +65,10 @@ const Process = () => {
                         className="mb-12 text-center"
                     >
                         <span className="text-accent font-medium">
-                            HOW IT WORKS
+                            How It Works
                         </span>
                         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mt-4 font-slab">
-                            Expert Auto Care: Your Journey to Peak Performance
+                            Simple Steps to Get Your Motorycle Serviced
                         </h2>
                     </motion.div>
                     {processSteps.map((step, index) => (
