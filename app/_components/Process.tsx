@@ -4,6 +4,8 @@ import { BsCalendar4 } from "react-icons/bs";
 import { HiHome } from "react-icons/hi";
 import { FaWrench } from "react-icons/fa";
 import { IoCarSportOutline } from "react-icons/io5";
+import { FaMotorcycle } from "react-icons/fa";
+
 
 const processSteps = [
     {
@@ -32,7 +34,7 @@ const processSteps = [
         title: "Ride Ready",
         description:
             "Hit the road with confidence. Your bike is fully serviced, tested, and ready to roll—wherever the ride takes you.",
-        icon: <IoCarSportOutline className="w-6 h-6" />, // consider replacing with a motorcycle icon like FaMotorcycle
+        icon: <FaMotorcycle className="w-6 h-6" />, // consider replacing with a motorcycle icon like FaMotorcycle
     },    
 ];
 

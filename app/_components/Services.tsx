@@ -1,17 +1,34 @@
 import React from "react";
 import Image from "next/image";
+import carbClean from "../../Documentation/assets/images/services/carbClean.png";
+import oilChange from "../../Documentation/assets/images/services/oilChange.png"
+import batteryFix from "../../Documentation/assets/images/services/batteryFix.png";
+import chainFix from "../../Documentation/assets/images/services/chainFix.png";
+import engineTune from "../../Documentation/assets/images/services/engineTune.png";
+import exhaustFix from "../../Documentation/assets/images/services/exhaustFix.png";
+import restoration from "../../Documentation/assets/images/services/restoration.png";
+
+import type { StaticImageData } from "next/image"; // ✅ import the type
+
 import { FaWrench } from "react-icons/fa";
 import { HiArrowRight } from "react-icons/hi";
 import { MdOutlineEngineering } from "react-icons/md";
 import { RiSlowDownFill } from "react-icons/ri";
 import { IoBatteryCharging } from "react-icons/io5";
 import { motion } from "motion/react";
+import { FaOilCan } from "react-icons/fa";
+import { GiChainsaw } from "react-icons/gi";
+import { GiAutoRepair } from "react-icons/gi";
+import { FaMotorcycle } from "react-icons/fa";
+
+
+
 
 interface ServiceCard {
     title: string;
     description: string;
     icon: React.ReactNode | string;
-    image: string;
+    image:StaticImageData;
     alt: string;
 }
 
@@ -20,8 +37,8 @@ const serviceCards: ServiceCard[] = [
         title: "Oil Changes",
         description:
             "Keep your engine running smooth with regular oil changes. We use the correct oil and filter based on your bike’s exact specs to ensure optimal performance and engine longevity.",
-        icon: <RiSlowDownFill className="w-8 h-8" />, // from react-icons/gi
-        image: "https://images.unsplash.com/photo-1613472901538-3b527a68244a?auto=format&fit=crop&q=60&w=800&h=400",
+        icon: <FaOilCan className="w-8 h-8" />, 
+        image: oilChange,
         alt: "Motorcycle oil being changed",
     },
     {
@@ -29,7 +46,7 @@ const serviceCards: ServiceCard[] = [
         description:
             "  Stay safe with our complete brake service. We handle everything from thorough inspections to pad and rotor replacements, plus brake fluid flushes and top-offs. We check for wear, leaks, and performance to keep your ride road-ready.",
         icon: <RiSlowDownFill className="w-8 h-8" />,
-        image: "https://plus.unsplash.com/premium_photo-1674375348180-e9052271ca30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D&dpr=2&width=800&height=400",
+        image: carbClean,
         alt: "Mechanic inspecting brake system",
     },
     {
@@ -37,7 +54,7 @@ const serviceCards: ServiceCard[] = [
         description:
             "Dead battery? We'll test your charging system, replace the battery, clean terminals, and ensure your bike starts strong—every time.",
         icon: <IoBatteryCharging className="w-8 h-8" />,
-        image: "https://images.unsplash.com/photo-1603983993085-656c3889937c?auto=format&fit=crop&q=60&w=800&h=400",
+        image: batteryFix,
         alt: "Motorcycle battery being replaced",
     },
     {
@@ -45,39 +62,39 @@ const serviceCards: ServiceCard[] = [
         description:
             "Keep your bike running smooth and strong with our expert engine services. We perform valve adjustments, carburetor or EFI tuning, spark timing, compression checks, and full diagnostics to ensure peak performance and longevity.",
         icon: <MdOutlineEngineering className="w-8 h-8" />,
-        image: "https://images.unsplash.com/photo-1602952084614-03e0bf2a3645?auto=format&fit=crop&q=60&w=800&h=400&ixlib=rb-4.0.3",
+        image: engineTune,
         alt: "Motorcycle engine maintenance in progress",
     },
     {
         title: "Carburetor Cleaning & Tuning",
         description:
             "Restore smooth throttle response and fuel efficiency with a professional carburetor cleaning. We disassemble, deep-clean, and precisely tune your carbs to ensure optimal engine performance.",
-        icon: <IoBatteryCharging className="w-8 h-8" />, // consider replacing this icon for accuracy
-        image: "https://images.unsplash.com/photo-1621569895279-3188f25ae4d9?auto=format&fit=crop&q=60&w=800&h=400&ixlib=rb-4.0.3",
+        icon: <MdOutlineEngineering className="w-8 h-8" />, // consider replacing this icon for accuracy
+        image: carbClean,
         alt: "Motorcycle carburetor being cleaned",
     },
     {
         title: "Chain Replacement & Adjustment",
         description:
             "Worn-out chain? We install new chains, adjust tension, and lubricate for smooth, safe riding. We also inspect sprockets and drivetrain wear to keep your bike running right.",
-        icon: <IoBatteryCharging className="w-8 h-8" />, // or another fitting icon
-        image: "https://images.unsplash.com/photo-1634606317544-5e11ac059391?auto=format&fit=crop&q=60&w=800&h=400",
+        icon: <GiChainsaw className="w-8 h-8" />, // or another fitting icon
+        image: chainFix,
         alt: "Motorcycle chain being serviced",
     },
     {
         title: "Exhaust Replacement & Repair",
         description:
             "Whether you're replacing a rusted pipe or upgrading to a performance exhaust, we handle fitment, sealing, and tuning to ensure the best performance and sound.",
-        icon: <IoBatteryCharging className="w-8 h-8" />,
-        image: "https://images.unsplash.com/photo-1631970978891-ec0adf5d7a23?auto=format&fit=crop&q=60&w=800&h=400",
+        icon: <GiAutoRepair className="w-8 h-8" />,
+        image: exhaustFix,
         alt: "Motorcycle exhaust system being worked on",
     },
     {
         title: "Motorcycle Restoration",
         description:
             "Found a barn find? Have an older bike you want to bring back to life? We specialize in full motorcycle restoration—from getting non-runners road-ready to engine rebuilds, fuel and electrical repairs, and even frame restoration. We'll return your bike to reliable, working condition—mechanically and visually.",
-        icon: <IoBatteryCharging className="w-8 h-8" />,
-        image: "https://images.unsplash.com/photo-1614204424934-fb5b93dc5387?auto=format&fit=crop&q=60&w=800&h=400&ixlib=rb-4.0.3",
+        icon: <FaMotorcycle className="w-8 h-8" />,
+        image: restoration,
         alt: "Motorcycle undergoing restoration",
     },
 ];
