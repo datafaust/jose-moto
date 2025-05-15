@@ -1,8 +1,8 @@
-import React, { useState, FormEvent } from "react";
+import React from "react";
 import Image from "next/image";
 import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 
 const quickLinks = [
     { href: "#home", label: "Home" },
@@ -12,11 +12,11 @@ const quickLinks = [
     { href: "#contact", label: "Contact" }
 ];
 
-const services = [
-    { href: "#oilChange", label: "Brake Changes" },
-    { href: "#engineTune", label: "Engine Service" },
-    { href: "#carbClean", label: "Carburetor Clean/Tune" },
-];
+// const services = [
+//     { href: "#oilChange", label: "Brake Changes" },
+//     { href: "#engineTune", label: "Engine Service" },
+//     { href: "#carbClean", label: "Carburetor Clean/Tune" },
+// ];
 
 const aboutLinks = [
     { href: "#", label: "Our story" },
@@ -32,22 +32,22 @@ const socialLinks = [
 ];
 
 const Footer = () => {
-    const [email, setEmail] = useState("");
+    // const [email, setEmail] = useState("");
 
-    const handleSubmit = (e: FormEvent) => {
-        e.preventDefault();
-        setEmail(""); // Clear the form
-        toast.success("👍 Submission successful!", {
-            position: "bottom-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: false,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-        });
-    };
+    // const handleSubmit = (e: FormEvent) => {
+    //     e.preventDefault();
+    //     setEmail(""); // Clear the form
+    //     toast.success("👍 Submission successful!", {
+    //         position: "bottom-right",
+    //         autoClose: 5000,
+    //         hideProgressBar: false,
+    //         closeOnClick: false,
+    //         pauseOnHover: true,
+    //         draggable: true,
+    //         progress: undefined,
+    //         theme: "light",
+    //     });
+    // };
     return (
         <footer className="bg-neutral-900 text-white">
             <div className="box-padding lg:space-y-4">
