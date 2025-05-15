@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import headerMoto from "../../Documentation/assets/images/header/headerMoto.png";
-import sportsBike from "../../Documentation/assets/images/sportsBike.png";
-import cruiserFix from "../../Documentation/assets/images/cruiserFix.png";
+import sportsBike from "../../Documentation/assets/images/services/sportsBike.png";
+import cruiserFix from "../../Documentation/assets/images/services/cruiserFix.png";
 import { motion } from "motion/react";
 
 const HeroBanner = () => {
