@@ -4,8 +4,7 @@ import { BsCalendar4 } from "react-icons/bs";
 import { HiHome } from "react-icons/hi";
 import { FaWrench } from "react-icons/fa";
 import { FaMotorcycle } from "react-icons/fa";
-import ragPic from "../../documentation/assets/images/ragpic.png";
-
+import carbPic from "../../Documentation/assets/images/services/carbClean.png";
 
 const processSteps = [
     {
@@ -50,7 +49,7 @@ const Process = () => {
                     className="relative h-[400px] md:h-full"
                 >
                     <Image
-                        src={ragPic}
+                        src={carbPic}
                         alt="Professional mechanic"
                         fill
                         sizes="(max-width: 768) 100vw, 50vw"

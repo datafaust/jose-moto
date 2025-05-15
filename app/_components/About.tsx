@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import goldWing from "../../Documentation/assets/images/goldWing.png";
+import carbClean from "../../Documentation/assets/images/services/carbClean.png"
 
 const About = () => {
     return (
@@ -11,7 +11,7 @@ const About = () => {
             {/* Image */}
 
             <Image
-                src={goldWing}
+                src={carbClean}
                 alt="About section image"
                 width={500}
                 height={300}
