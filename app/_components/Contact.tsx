@@ -1,5 +1,4 @@
-import { useState, FormEvent } from "react";
-import { toast } from "react-toastify";
+
 // const subjects = [
 //     "General Inquiry",
 //     "Service Request",
@@ -8,85 +7,85 @@ import { toast } from "react-toastify";
 //     "Other",
 // ];
 
-interface FormData {
-    firstName: string;
-    lastName: string;
-    email: string;
-    phone: string;
-    subject: string;
-    message: string;
-    agreeToPolicy: boolean;
-}
+// interface FormData {
+//     firstName: string;
+//     lastName: string;
+//     email: string;
+//     phone: string;
+//     subject: string;
+//     message: string;
+//     agreeToPolicy: boolean;
+// }
 
-interface FormErrors {
-    firstName?: string;
-    lastName?: string;
-    email?: string;
-    phone?: string;
-    subject?: string;
-    message?: string;
-    agreeToPolicy?: string;
-}
+// interface FormErrors {
+//     firstName?: string;
+//     lastName?: string;
+//     email?: string;
+//     phone?: string;
+//     subject?: string;
+//     message?: string;
+//     agreeToPolicy?: string;
+// }
 
-const initialFormData: FormData = {
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
-    agreeToPolicy: false,
-};
+// const initialFormData: FormData = {
+//     firstName: "",
+//     lastName: "",
+//     email: "",
+//     phone: "",
+//     subject: "",
+//     message: "",
+//     agreeToPolicy: false,
+// };
 
 export default function ContactForm() {
-    const [formData, setFormData] = useState<FormData>(initialFormData);
-    const [errors, setErrors] = useState<FormErrors>({});
+    // const [formData, setFormData] = useState<FormData>(initialFormData);
+    // const [errors, setErrors] = useState<FormErrors>({});
 
-    const validateForm = (): boolean => {
-        const newErrors: FormErrors = {};
+    // const validateForm = (): boolean => {
+    //     const newErrors: FormErrors = {};
 
-        // Email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(formData.email)) {
-            newErrors.email = "Please enter a valid email address";
-        }
+    //     // Email validation
+    //     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    //     if (!emailRegex.test(formData.email)) {
+    //         newErrors.email = "Please enter a valid email address";
+    //     }
 
-        // Phone validation - just check if filled
-        if (!formData.phone.trim()) {
-            newErrors.phone = "Phone number is required";
-        }
+    //     // Phone validation - just check if filled
+    //     if (!formData.phone.trim()) {
+    //         newErrors.phone = "Phone number is required";
+    //     }
 
-        // Required fields validation
-        if (!formData.firstName.trim())
-            newErrors.firstName = "First name is required";
-        if (!formData.lastName.trim())
-            newErrors.lastName = "Last name is required";
-        if (!formData.subject) newErrors.subject = "Please select a subject";
-        if (!formData.message.trim()) newErrors.message = "Message is required";
-        if (!formData.agreeToPolicy)
-            newErrors.agreeToPolicy = "You must agree to the privacy policy";
+    //     // Required fields validation
+    //     if (!formData.firstName.trim())
+    //         newErrors.firstName = "First name is required";
+    //     if (!formData.lastName.trim())
+    //         newErrors.lastName = "Last name is required";
+    //     if (!formData.subject) newErrors.subject = "Please select a subject";
+    //     if (!formData.message.trim()) newErrors.message = "Message is required";
+    //     if (!formData.agreeToPolicy)
+    //         newErrors.agreeToPolicy = "You must agree to the privacy policy";
 
-        setErrors(newErrors);
-        return Object.keys(newErrors).length === 0;
-    };
+    //     setErrors(newErrors);
+    //     return Object.keys(newErrors).length === 0;
+    // };
 
-    const handleSubmit = (e: FormEvent) => {
-        e.preventDefault();
-        if (validateForm()) {
-            toast.success("👍 Submission successful!", {
-                position: "bottom-right",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: false,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "light",
-            });
-            setFormData(initialFormData); // Clear form
-            setErrors({});
-        }
-    };
+    // const handleSubmit = (e: FormEvent) => {
+    //     e.preventDefault();
+    //     if (validateForm()) {
+    //         toast.success("👍 Submission successful!", {
+    //             position: "bottom-right",
+    //             autoClose: 5000,
+    //             hideProgressBar: false,
+    //             closeOnClick: false,
+    //             pauseOnHover: true,
+    //             draggable: true,
+    //             progress: undefined,
+    //             theme: "light",
+    //         });
+    //         setFormData(initialFormData); // Clear form
+    //         setErrors({});
+    //     }
+    // };
 
     return (
         <section className="w-full scroll-mt-18" id="contact">
