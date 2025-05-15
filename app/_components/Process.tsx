@@ -3,7 +3,6 @@ import Image from "next/image";
 import { BsCalendar4 } from "react-icons/bs";
 import { HiHome } from "react-icons/hi";
 import { FaWrench } from "react-icons/fa";
-import { IoCarSportOutline } from "react-icons/io5";
 import { FaMotorcycle } from "react-icons/fa";
 import ragPic from "../../Documentation/assets/images/ragpic.png";
 

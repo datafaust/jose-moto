@@ -7,6 +7,7 @@ import chainFix from "../../Documentation/assets/images/services/chainFix.png";
 import engineTune from "../../Documentation/assets/images/services/engineTune.png";
 import exhaustFix from "../../Documentation/assets/images/services/exhaustFix.png";
 import restoration from "../../Documentation/assets/images/services/restoration.png";
+import brakeChange from "../../Documentation/assets/images/services/brakeChange.png";
 
 import type { StaticImageData } from "next/image"; // ✅ import the type
 
@@ -49,7 +50,7 @@ const serviceCards: ServiceCard[] = [
         description:
             "  Stay safe with our complete brake service. We handle everything from thorough inspections to pad and rotor replacements, plus brake fluid flushes and top-offs. We check for wear, leaks, and performance to keep your ride road-ready.",
         icon: <RiSlowDownFill className="w-8 h-8" />,
-        image: carbClean,
+        image: brakeChange,
         alt: "Mechanic inspecting brake system",
     },
     {
