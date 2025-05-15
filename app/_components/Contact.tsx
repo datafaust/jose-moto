@@ -89,7 +89,7 @@ export default function ContactForm() {
     };
 
     return (
-        <section className="w-full min-h-screen scroll-mt-18" id="contact">
+        <section className="w-full scroll-mt-18" id="contact">
             <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 box-padding">
                 {/* Map Section */}
                 <div className="w-full h-[400px] lg:h-full rounded-lg overflow-hidden">
@@ -125,7 +125,7 @@ export default function ContactForm() {
                 </div>
             </div>
                 {/* Form Section */}
-                <div className="w-full">
+                {/* <div className="w-full">
                     <div className="mb-8">
                         <h2 className="text-accent mb-2 font-semibold">
                             BOOK AN APPOINTMENT
@@ -324,7 +324,7 @@ export default function ContactForm() {
                             Send message
                         </button>
                     </form>
-                </div>
+                </div> */}
             </div>
         </section>
     );
