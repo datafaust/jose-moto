@@ -5,6 +5,7 @@ import { HiHome } from "react-icons/hi";
 import { FaWrench } from "react-icons/fa";
 import { IoCarSportOutline } from "react-icons/io5";
 import { FaMotorcycle } from "react-icons/fa";
+import ragPic from "../../Documentation/assets/images/ragpic.png";
 
 
 const processSteps = [
@@ -50,7 +51,7 @@ const Process = () => {
                     className="relative h-[400px] md:h-full"
                 >
                     <Image
-                        src="https://plus.unsplash.com/premium_photo-1677009541327-5f7e23f81575?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3&dpr=2&w=400&h=800"
+                        src={ragPic}
                         alt="Professional mechanic"
                         fill
                         sizes="(max-width: 768) 100vw, 50vw"

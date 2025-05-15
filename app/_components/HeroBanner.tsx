@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import headerMoto from "../../Documentation/assets/images/header/headerMoto.png";
+import sportsBike from "../../Documentation/assets/images/sportsBike.png";
+import cruiserFix from "../../Documentation/assets/images/cruiserFix.png";
 import { motion } from "motion/react";
 
 const HeroBanner = () => {
@@ -59,7 +61,7 @@ const HeroBanner = () => {
                 {/* Image 2 */}
                 <div className="relative w-full max-w-full aspect-[16/10] rounded-2xl overflow-hidden shadow-xl hidden lg:block mt-10">
                     <Image
-                        src="https://plus.unsplash.com/premium_photo-1682126117799-064f3f7a034e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNhciUyMHJlcGFpciUyMGFuZCUyMGF1dG8lMjBtYWludGFpbmFuY2V8ZW58MHx8MHx8fDA%3D"
+                        src={sportsBike}
                         alt="Car engine maintenance"
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -70,7 +72,7 @@ const HeroBanner = () => {
                 {/* Image 3 */}
                 <div className="relative w-full max-w-full aspect-[16/10] rounded-2xl overflow-hidden shadow-xl hidden md:block">
                     <Image
-                        src="https://plus.unsplash.com/premium_photo-1661543157602-4ff432c2a004?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzd8fGNhciUyMHJlcGFpciUyMGFuZCUyMGF1dG8lMjBtYWludGFpbmFuY2V8ZW58MHx8MHx8fDA%3D"
+                        src={cruiserFix}
                         alt="Mechanic working under a car"
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"

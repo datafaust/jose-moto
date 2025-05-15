@@ -13,10 +13,9 @@ const quickLinks = [
 ];
 
 const services = [
-    { href: "#", label: "Brake Changes" },
-    { href: "#", label: "Engine Service" },
-    { href: "#", label: "Carburetor Clean/Tune" },
-    { href: "#", label: "Tire services" }
+    { href: "#oilChange", label: "Brake Changes" },
+    { href: "#engineTune", label: "Engine Service" },
+    { href: "#carbClean", label: "Carburetor Clean/Tune" },
 ];
 
 const aboutLinks = [
@@ -98,7 +97,7 @@ const Footer = () => {
                     </div>
 
                     {/* Services */}
-                    <div>
+                    {/* <div>
                         <h3 className="font-bold text-xl mb-4 font-slab">
                             Services
                         </h3>
@@ -114,7 +113,7 @@ const Footer = () => {
                                 </li>
                             ))}
                         </ul>
-                    </div>
+                    </div> */}
 
                     {/* About & Newsletter */}
                     <div>
@@ -136,7 +135,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div>
+                {/* <div>
                     <h3 className="font-bold text-lg mb-4 font-slab">
                         Stay up to date
                     </h3>
@@ -159,7 +158,7 @@ const Footer = () => {
                             Subscribe
                         </button>
                     </form>
-                </div>
+                </div> */}
                 {/* Social Media Icons */}
                 <div className="flex gap-4 justify-end mt-8">
                     {socialLinks.map((social, index) => (

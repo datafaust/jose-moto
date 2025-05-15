@@ -26,6 +26,7 @@ import { FaMotorcycle } from "react-icons/fa";
 
 interface ServiceCard {
     title: string;
+    id: string;
     description: string;
     icon: React.ReactNode | string;
     image:StaticImageData;
@@ -35,6 +36,7 @@ interface ServiceCard {
 const serviceCards: ServiceCard[] = [
     {
         title: "Oil Changes",
+        id:'oilChange',
         description:
             "Keep your engine running smooth with regular oil changes. We use the correct oil and filter based on your bike’s exact specs to ensure optimal performance and engine longevity.",
         icon: <FaOilCan className="w-8 h-8" />, 
@@ -43,6 +45,7 @@ const serviceCards: ServiceCard[] = [
     },
     {
         title: "Brake Changes and Inspections",
+        id:'brakeChange',
         description:
             "  Stay safe with our complete brake service. We handle everything from thorough inspections to pad and rotor replacements, plus brake fluid flushes and top-offs. We check for wear, leaks, and performance to keep your ride road-ready.",
         icon: <RiSlowDownFill className="w-8 h-8" />,
@@ -51,6 +54,7 @@ const serviceCards: ServiceCard[] = [
     },
     {
         title: "Battery Replacement & Diagnostics",
+        id:'batteryReplace',
         description:
             "Dead battery? We'll test your charging system, replace the battery, clean terminals, and ensure your bike starts strong—every time.",
         icon: <IoBatteryCharging className="w-8 h-8" />,
@@ -59,6 +63,7 @@ const serviceCards: ServiceCard[] = [
     },
     {
         title: "Motorcycle Engine Service & Tuning",
+        id:'engineTune',
         description:
             "Keep your bike running smooth and strong with our expert engine services. We perform valve adjustments, carburetor or EFI tuning, spark timing, compression checks, and full diagnostics to ensure peak performance and longevity.",
         icon: <MdOutlineEngineering className="w-8 h-8" />,
@@ -67,6 +72,7 @@ const serviceCards: ServiceCard[] = [
     },
     {
         title: "Carburetor Cleaning & Tuning",
+        id:'carbClean',
         description:
             "Restore smooth throttle response and fuel efficiency with a professional carburetor cleaning. We disassemble, deep-clean, and precisely tune your carbs to ensure optimal engine performance.",
         icon: <MdOutlineEngineering className="w-8 h-8" />, // consider replacing this icon for accuracy
@@ -75,6 +81,7 @@ const serviceCards: ServiceCard[] = [
     },
     {
         title: "Chain Replacement & Adjustment",
+        id:'chainReplace',
         description:
             "Worn-out chain? We install new chains, adjust tension, and lubricate for smooth, safe riding. We also inspect sprockets and drivetrain wear to keep your bike running right.",
         icon: <GiChainsaw className="w-8 h-8" />, // or another fitting icon
@@ -83,6 +90,7 @@ const serviceCards: ServiceCard[] = [
     },
     {
         title: "Exhaust Replacement & Repair",
+        id:'exhaustReplace',
         description:
             "Whether you're replacing a rusted pipe or upgrading to a performance exhaust, we handle fitment, sealing, and tuning to ensure the best performance and sound.",
         icon: <GiAutoRepair className="w-8 h-8" />,
@@ -91,6 +99,7 @@ const serviceCards: ServiceCard[] = [
     },
     {
         title: "Motorcycle Restoration",
+        id:'restoration',
         description:
             "Found a barn find? Have an older bike you want to bring back to life? We specialize in full motorcycle restoration—from getting non-runners road-ready to engine rebuilds, fuel and electrical repairs, and even frame restoration. We'll return your bike to reliable, working condition—mechanically and visually.",
         icon: <FaMotorcycle className="w-8 h-8" />,
@@ -141,7 +150,7 @@ const Services = () => {
                         viewport={{ once: true }}
                         className="bg-white rounded-lg hover:shadow-lg hover:scale-105 duration-500 ease-in-out overflow-hidden border border-zinc-200"
                     >
-                        <div className="relative h-48">
+                        <div className="relative h-48" id="card.id">
                             <Image
                                 src={card.image}
                                 alt={card.alt}
