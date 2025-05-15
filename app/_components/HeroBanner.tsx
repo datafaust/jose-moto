@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import headerMoto from "../../Documentation/assets/images/header/headerMoto.png";
 import { motion } from "motion/react";
 
 const HeroBanner = () => {
@@ -32,6 +33,9 @@ const HeroBanner = () => {
                 <a href="#services" className="inline-block border-2 border-accent text-accent px-6 sm:px-8 py-3 rounded-lg btn-transition hover:bg-accent/15 cursor-pointer">
                     View Services
                 </a>
+                <a href="#contact" className="inline-block border-2 border-accent text-accent px-6 sm:px-8 py-3 rounded-lg btn-transition hover:bg-accent/15 cursor-pointer">
+                    Contact Us
+                </a>
             </motion.div>
 
             {/* Image Grid */}
@@ -44,7 +48,7 @@ const HeroBanner = () => {
                 {/* Image 1 */}
                 <div className="relative w-full max-w-full aspect-[16/10] rounded-2xl overflow-hidden shadow-xl">
                     <Image
-                        src="https://plus.unsplash.com/premium_photo-1664298121254-3f755ec249cd?w=500&auto=format&fit=crop&q=60"
+                        src={headerMoto}
                         alt="Mechanic inspecting a car"
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"

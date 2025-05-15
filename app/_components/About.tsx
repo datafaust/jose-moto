@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import goldWing from "../../Documentation/assets/images/goldWing.png";
 
 const About = () => {
     return (
@@ -10,12 +11,12 @@ const About = () => {
             {/* Image */}
 
             <Image
-                src="/about.png"
+                src={goldWing}
                 alt="About section image"
                 width={500}
                 height={300}
                 priority
-                className="w-auto h-auto order-last lg:order-first"
+                className="w-auto h-auto order-last lg:order-first rounded-2xl"
             />
 
             <div
