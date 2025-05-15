@@ -4,7 +4,7 @@ import { BsCalendar4 } from "react-icons/bs";
 import { HiHome } from "react-icons/hi";
 import { FaWrench } from "react-icons/fa";
 import { FaMotorcycle } from "react-icons/fa";
-import ragPic from "../../Documentation/assets/images/ragpic.png";
+import ragPic from "../../documentation/assets/images/ragpic.png";
 
 
 const processSteps = [

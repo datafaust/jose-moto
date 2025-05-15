@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import goldWing from "../../Documentation/assets/images/goldWing.png";
+import goldWing from "../../documentation/assets/images/goldWing.png";
 
 const About = () => {
     return (
