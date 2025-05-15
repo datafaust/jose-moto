@@ -1,12 +1,12 @@
 import { useState, FormEvent } from "react";
 import { toast } from "react-toastify";
-const subjects = [
-    "General Inquiry",
-    "Service Request",
-    "Parts Inquiry",
-    "Appointment Booking",
-    "Other",
-];
+// const subjects = [
+//     "General Inquiry",
+//     "Service Request",
+//     "Parts Inquiry",
+//     "Appointment Booking",
+//     "Other",
+// ];
 
 interface FormData {
     firstName: string;
